@@ -22,3 +22,11 @@ conexao.commit()# edita o banco de dados
 #finalizar a conexao e o cursor
 cursor.close()
 conexao.close()
+
+#create
+#nome_produto = "todynho"
+#valor = 3
+#comando = f'INSERT INTO vendas (nome_produto, valor) VALUES ("{nome_produto}", {valor})'
+#cursor.execute(comando)
+#conexao.commit()# edita o banco de dados
+#resultado = cursor.fetchall()#ler o banco de dados
