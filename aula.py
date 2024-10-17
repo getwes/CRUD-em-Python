@@ -11,12 +11,11 @@ cursor = conexao.cursor()
 
 
 #crud
-
-comando = f'SELECT * FROM vendas'
+nome_produto = "todynho"
+valor =6
+comando = f'UPDATE vendas SET VALOR = {valor} WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
-#conexao.commit()# edita o banco de dados
-resultado = cursor.fetchall()#ler o banco de dados
-print(resultado)
+conexao.commit()# edita o banco de dados
 
 #finalizar a conexao e o cursor
 cursor.close()
@@ -29,3 +28,16 @@ conexao.close()
 #cursor.execute(comando)
 #conexao.commit()# edita o banco de dados
 #resultado = cursor.fetchall()#ler o banco de dados
+
+#read
+#comando = f'SELECT * FROM vendas'
+#cursor.execute(comando)
+#resultado = cursor.fetchall()#ler o banco de dados
+#print(resultado)
+
+#update
+nome_produto = "todynho"
+valor =6
+comando = f'UPDATE vendas SET VALOR = {valor} WHERE nome_produto = "{nome_produto}"'
+cursor.execute(comando)
+conexao.commit()# edita o banco de dados
