@@ -12,8 +12,8 @@ cursor = conexao.cursor()
 
 #crud
 nome_produto = "todynho"
-valor =6
-comando = f'UPDATE vendas SET VALOR = {valor} WHERE nome_produto = "{nome_produto}"'
+
+comando = f'DELETE FROM vendas  WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
 conexao.commit()# edita o banco de dados
 
@@ -36,8 +36,15 @@ conexao.close()
 #print(resultado)
 
 #update
-nome_produto = "todynho"
-valor =6
-comando = f'UPDATE vendas SET VALOR = {valor} WHERE nome_produto = "{nome_produto}"'
-cursor.execute(comando)
-conexao.commit()# edita o banco de dados
+#nome_produto = "todynho"
+#valor =6
+#comando = f'UPDATE vendas SET VALOR = {valor} WHERE nome_produto = "{nome_produto}"'
+#cursor.execute(comando)
+#conexao.commit()# edita o banco de dados
+
+# delete
+#nome_produto = "todynho"
+
+#comando = f'DELETE FROM vendas  WHERE nome_produto = "{nome_produto}"'
+#cursor.execute(comando)
+#conexao.commit()# edita o banco de dados
